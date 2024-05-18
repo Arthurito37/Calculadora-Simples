@@ -1,0 +1,21 @@
+a = input("Qual é o Valor de A? ")
+b = input("Qual é o valor de B? ")
+c = input("Qual é o valor de C? ")
+a = float(a) 
+b = float(b) 
+c = float(c) 
+delta = ((b*b)-(4*a*c))
+delta = str(delta)
+print("Delta corresponde a " + delta)
+delta = float(delta)
+if delta < 0:
+    print("A equação não possui raízes reais.")
+else:
+    raiz = delta ** 0.5
+    raiz = float(raiz)
+    xPositivo = (-b + raiz)/(2*a)
+    xNegativo = (-b - raiz)/(2*a)
+    xPositivo = str(xPositivo)
+    xNegativo = str(xNegativo)
+    print("X¹ = " + xPositivo)
+    print("X² = " + xNegativo)
